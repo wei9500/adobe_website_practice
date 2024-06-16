@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+body, html {
+    height: 100%;
+    /* body的高度，就是內容(.wrapper)的高度 */
+    /* html內容高度，依照body的高度為主，必須把body的高度撐到100%，垂直才會置中，
+    但因為外面還有一層html侷限，所以html也要同步撐到100% */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 水平垂直置中 */
+}
+
+.header {
+    text-align: center;
+}
+
+.header-img {
+    width: 50px;
+    height: auto;
+}
+
+.header-title {
+    color: #fa0f00;
+    text-transform: capitalize;
+    /* 首字大寫 */
+    font-weight: 600;
+    margin-top: .5rem;
+}
+
+.nav {
+    margin-top: 2rem;
+}
+
+.nav-ul {
+    display: flex;
+    /* li要變水平，父層ul要設定flex */
+    flex-wrap: wrap;
+    /* flex預設不會換行，所以字不會排成兩排 */
+}
+
+.nav-li {
+    width: 33.333333%;
+}
+
+.nav-btn {
+    display: block;
+    /* a 特性：轉為 block 才可以文字內容置中 */
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 100px;
+    text-decoration: none;
+    color: #fff;
+    transition-duration: .3s;
+    /* 轉場淡入效果 */
+}
+
+.nav-btn:hover {
+    opacity: .7;
+}
+
+.nav-btn-acrobat {
+    background-color: #333;
+}
+
+.nav-btn-premiere {
+    background-color: #dd1f81;
+}
+
+.nav-btn-photoshop{
+    background-color: #00a7e2;
+}
+
+.nav-btn-after-effects {
+    background-color: #620294;
+}
+
+.nav-btn-illustrator {
+    background-color: #ee9a10;
+}
+
+.nav-btn-dreamweaver {
+    background-color: #84c922;
+}

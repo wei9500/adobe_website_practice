@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+}
+
+img{
+    vertical-align: bottom;
+    /* img標籤下面會有一個空間，設定垂直向下對齊 */
+}
+
+
+a{
+    outline: none;
+    /* 按下tab鍵，周圍會出現的框 */
+
+}       
