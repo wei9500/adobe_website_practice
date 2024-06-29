@@ -10,6 +10,10 @@
     /* 上移一半高度 */
 }
 
+.nav-active {
+    background-color: rgba(0, 0, 0, .7);
+}
+
 .nav-btn {
     background-color: #fff;
     width: 15px;
@@ -157,3 +161,43 @@
     height: 100px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, .3) 0, transparent 50%);
 } */
+
+
+/* 桌機版（小於、等於 1024px 時）-------------------------- */
+@media screen and (max-width: 1024px) {
+    .article {
+        width: 80%;
+    }
+    /* 寬度固定80%，右側留白 */
+}
+
+/* 手機版（小於、等於 480px 時）-------------------------- */
+@media screen and (max-width: 480px) {
+    .article {
+        width: 100%;
+        /* 或是用 auto ，寬度左右兩側留白範圍相同 */
+        padding: 4rem 2rem 2rem;
+        /* 上4、左右2、下2，上方留nav位置 */
+    }
+    .nav {
+        top: 0;
+        margin-top: 0;
+        /* 本來有設margin-top: -117px，歸0 */
+        left: 0;
+        display: flex;
+        /* 橫式排列 */
+        justify-content: center;
+        /* 內容置中 */
+        /* background-color: pink; */
+        width: 100%;
+        z-index: 10;
+        /* 圖片內容多時，上滑會蓋住nav */
+
+    }
+
+    .article-title {
+        text-align: center;
+        /* 標題居中 */
+    }
+    
+}

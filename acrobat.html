@@ -18,10 +18,15 @@
     <link rel="stylesheet" href="./style/ac.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="./js/master.js"></script>
+    <!-- defer：載完之後不會馬上執行，網頁內容（DOM）讀完依序執行
+     之前是放在/body前一行：全部等DOM讀完，才開始下載，載完才開始執行 -->
+
 
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav" id="Nav">
         <a class="nav-btn nav-btn-index" href="./index.html">index</a>
         <a class="nav-btn nav-btn-active" href="./acrobat.html">acrobat</a>
         <a class="nav-btn" href="./premiere.html">premiere</a>
@@ -38,7 +43,7 @@
             <p class="article-desc">使用桌上型電腦及行動裝置，與創意團隊、客戶和廣告代理商安全地協作 (不論防火牆內外)。您可以將 InDesign 或 Illustrator 檔案轉換成 PDF，以輕鬆地分享、傳送給多位審核者，並在單一檔案中線上收集注釋。</p>
         </div>
         <div class="article-body">
-            <div class="grid grid-3">
+            <div class="grid" id="Grid">
                 <a href="./images/ac-1-lg.png" target="_blank">
                     <div class="card hover-fade-in hover-zoom-in">
                         <div class="card-head">
@@ -89,5 +94,6 @@
         </div>
     </article>
     <div class="square"></div>
+
 </body>
 </html>
