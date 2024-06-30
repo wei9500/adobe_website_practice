@@ -86,10 +86,21 @@ function setInit() {
 // 事件
 function setEvent() {
     setScroll();
+    setFancybox()
+}
+
+function setFancybox() {
+    $grid.find('a').fancybox({
+        protect: true,
+        // 鎖右鍵
+        loop: true
+        // 圖片、影片、文件循環
+    });
 }
 
 setInit();
-setEvent()
+setEvent();
+// 要呼叫才會執行
 
 
 

@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="./style/master.css">
     <link rel="stylesheet" href="./style/ac.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="./js/master.js"></script>
     <!-- defer：載完之後不會馬上執行，網頁內容（DOM）讀完依序執行
      之前是放在/body前一行：全部等DOM讀完，才開始下載，載完才開始執行 -->
@@ -44,7 +46,14 @@
         </div>
         <div class="article-body">
             <div class="grid" id="Grid">
-                <a href="./images/ac-1-lg.png" target="_blank">
+                <a 
+                    href="./images/ac-1-lg.png" 
+                    target="_blank" 
+                    data-fancybox="ac"
+                    data-caption="衍生自 PostScript 頁面描述語言的子集，用以生成和輸出圖形。"
+                >
+                <!-- 組成一個群組，可以切換上下一張 -->
+                 <!-- data-caption 圖片說明 -->
                     <div class="card hover-fade-in hover-zoom-in">
                         <div class="card-head">
                             <img class="card-img" src="./images/ac-1-sm.png" width="250" height="141" alt="衍生自 PostScript 頁面描述語言的子集，用以生成和輸出圖形。">
@@ -55,7 +64,12 @@
                         </div>
                     </div>
                 </a>
-                <a href="./images/ac-2-lg.png" target="_blank">
+                <a 
+                    href="./images/ac-2-lg.png" 
+                    target="_blank"
+                    data-fancybox="ac"
+                    data-caption="字型嵌入/替換系統，可使字型隨檔案一起傳輸。"
+                >
                     <div class="card hover-fade-in hover-zoom-in">
                         <div class="card-head">
                             <img class="card-img" src="./images/ac-2-sm.png" width="250" height="141" alt="字型嵌入/替換系統，可使字型隨檔案一起傳輸。">
@@ -66,7 +80,12 @@
                         </div>
                     </div>
                 </a>
-                <a href="./images/ac-3-lg.png" target="_blank">
+                <a 
+                    href="./images/ac-3-lg.png" 
+                    target="_blank"
+                    data-fancybox="ac"
+                    data-caption="結構化的儲存系統，用以綁定這些元素和任何相關內容到單個檔案，帶有適當的資料壓縮系統。"
+                >
                     <div class="card hover-fade-in hover-zoom-in">
                         <div class="card-head">
                             <img class="card-img" src="./images/ac-3-sm.png" width="250" height="141" alt="結構化的儲存系統，用以綁定這些元素和任何相關內容到單個檔案，帶有適當的資料壓縮系統。">
@@ -77,7 +96,12 @@
                         </div>
                     </div>
                 </a>
-                <a href="./images/ac-4-lg.png" target="_blank">
+                <a 
+                    href="./images/ac-4-lg.png" 
+                    target="_blank"
+                    data-fancybox="ac"
+                    data-caption="PDF 包含已標記和解析的 PostScript 原始碼，以在修改 PDF 頁面描述中的項與修改所產生的頁面造型之間直接保持一致。"
+                >
                     <div class="card hover-fade-in hover-zoom-in">
                         <div class="card-head">
                             <img class="card-img" src="./images/ac-4-sm.png" width="250" height="141" alt="PDF 包含已標記和解析的 PostScript 原始碼，以在修改 PDF 頁面描述中的項與修改所產生的頁面造型之間直接保持一致。">

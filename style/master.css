@@ -37,6 +37,11 @@
     opacity: 1;
 }
 
+.nav-btn-active {
+    pointer-events: none;
+    /* 去除超連結，當頁無法點擊 */
+}
+
 /* article---------------------- */
 
 .article {
