@@ -93,8 +93,66 @@ function setFancybox() {
     $grid.find('a').fancybox({
         protect: true,
         // 鎖右鍵
-        loop: true
+
+        loop: true,
         // 圖片、影片、文件循環
+
+        animationDuration: 1000,
+        // Fancybox開啟、關閉動畫時間（毫秒）
+
+        transitionDuration: 1000,
+        // 圖片換到下一張圖片的轉場時間
+
+        transitionEffect: 'slide',
+        // 轉場效果
+
+        // fullScreen: {
+        //     autoStart: true,
+        // },
+        // 全螢幕
+
+        // keyboard: false,
+        // 鍵盤控制
+        infobar: false,
+        // 左上分頁資訊
+
+        // toolbar: false,
+        // 右上工具選項
+
+        // smallBtn: true,
+        // 右上關閉按鈕顯示
+
+        // arrows: false,
+        // 左右分頁按鈕顯示
+
+        // slideShow: {
+        //     autoStart: true,
+        //     speed: 1000,
+        // },
+        // 幻燈片播放
+
+        // thumbs: false,
+        // 縮圖
+
+        buttons: [
+            'share',
+            'slideShow',
+            'fullScreen',
+            'download',
+            'thumbs',
+            'close'
+        ],
+        // 工具選項內容
+
+        media: {
+            youtube: {
+                params: {
+                    autoplay: false
+                }
+            },
+        }
+
+        // youtube不會自動播放
     });
 }
 
